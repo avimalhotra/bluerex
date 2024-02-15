@@ -51,7 +51,7 @@ body{
 .justify-space-bet{ justify-content: space-between;}
 .justify-center{ justify-content: center;}
 .align-center{ align-items: center;}
-
+h2{ font-size: 50px; font-weight: 600;}
 
 
 /* custom css */
@@ -67,26 +67,53 @@ body{
 
 .banner{ padding: 65px 0 225px; }
 .pt{ font-family: var(--pf); font-size: 42px; }
-h2{ font-size: 65px; font-weight: 600;}
+.banner h2{ font-size: 65px; }
 .banner p{ font-size: 23px; margin: 2rem 0 4rem;}
 .link{ display: inline-block; width: 198px; line-height: 60px; border-radius: 30px; background: var(--pink); color: #fff; text-align: center; margin: 23px 12px; box-shadow: 4px 4px 16px #01020259;}
 .link-secondary{ background: #5f3fb8b3; }
 
 
-.wrap-2{ background: url(../img/map.webp) no-repeat center center/cover; color: #484848; padding: 100px 0; }
+.wrap-2{ background: url(../img/map.webp) no-repeat center center/cover; color: #484848; padding: 100px 0 0 0; }
 .wrap-2 h2{ font-size: 50px;}
 .tabs{ margin: 24px 0; }
-.tabs ul{ display: flex; flex-flow: row wrap; }
+.tabs ul{ display: flex; flex-flow: row wrap; margin-bottom: 50px; }
 .tabs a{ display: block; color: inherit; padding: 0 20px; line-height: 46px; text-align: center; border-radius: 23px;}
-.readmore{ background: var(--pink); display: block; color: #fff; width: 146px; line-height: 46px; text-align: center; border-radius: 10px;}
+.readmore{ background: var(--pink); display: inline-block; color: #fff; width: 146px; line-height: 46px; text-align: center; border-radius: 10px;  box-shadow: 0 10px  #ff5990;}
 .tabs a.active{ background: var(--pink); color: #fff;}
 .tab-data p{ font-size: 14px; line-height: 25px; color: #1d1d1d; margin: 15px 0;}
-.wrap-2 img{ max-width: 100%; height: auto;}
+.wrap-2 img{ max-width: 100%; height: auto; float: right;}
+
+
+.wrap-3{ background: #4b2d7f; color: #fff; text-align: center;}
+.wrap-3 section{  padding: 75px 50px 90px; }
+.wrap-3 section:hover{ background: #40286a;}
+.wrap-3 span.fa{ font-size: 40px;}
+.wrap-3 .lg{ font-size: 50px; font-weight: 600; }
+.wrap-3 h3{ font-size: 30px; ;}
+.wrap-3 h3 small{ font-size: 25px; font-weight: 400;}
+.wrap-3 p:last-child{ font-size: 15px; line-height: 24px;}
+
+
+.wrap-4{ background: url(../img/bg-2.webp) no-repeat center/cover; color: #fff; padding: 80px 0; text-align: center;}
+.wrap-4 p{ margin: 25px 0 40px;}
+.wrap-4 .tabs{ padding: 35px 0; }
 
 
 
+.wrap-5{ padding: 100px 0; color: #333;}
+.wrap-5 span.fa{ font-size: 70px; background: linear-gradient(to right, #ed1b33, #442e82); background-clip: text; -webkit-background-clip: text; color: transparent; }
+.wrap-5 section{ margin-top: 50px;}
+.wrap-5 h2{ font-size: 50px;}
+.wrap-5 p{  margin: 15px 0;}
+.wrap-5 video{ max-width: 100%; height: auto;  display: block; margin: auto; }
 
 
+.wrap-6{ background: #f1f1f1; padding: 75px 0; text-align: center; color: #333; }
+.wrap-6 img{ max-width: 100%; height: auto; margin-bottom: 2rem;}
+
+
+.wrap-7{ background: #4b2d7f; padding: 90px 0; text-align: center;}
+.wrap-7 img{ margin: 30px 0; }
 
 
 /* responsive */
@@ -111,7 +138,8 @@ h2{ font-size: 65px; font-weight: 600;}
     nav{ display: none;}
     .btnmob{ display: block; float: right;}
     .wrap-1 header{ padding: 30px 0;}
-    
+    .wrap-3 section{  padding: 75px 0px 90px; }
+    .order-t-first{ order: -1;}
 }
 @media screen and (max-width:767px){
     html{ font-size: 12px;}
@@ -148,6 +176,7 @@ h2{ font-size: 65px; font-weight: 600;}
     .wrap-1 img{ width: 50%; height: auto;}
     h2{ font-size: 55px;}
     .tabs li{ flex: 0 1 50%;}
+    .banner h2{ font-size: 50px;}
 }
 
 @media screen and (max-width:359px){
